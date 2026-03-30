@@ -915,7 +915,7 @@
                 const _0xM = { "name": "Imi\u0119", "surname": "Nazwisko", "sex": "P\u0142e\u0107", "birthday": "Data urodzenia", "pesel": "PESEL", "mdow_series": "Seria i numer mDowodu", "issue_date": "Data wydania", "expiry_date": "Termin wa\u017cno\u015bci", "father_name": "Imi\u0119 ojca", "mother_name": "Imi\u0119 matki", "nationality": "Obywatelstwo", "birthPlace": "Miejsce urodzenia", "birth_country": "Kraj urodzenia", "adress1": "Adres", "adress2": "Kod pocztowy", "city": "Miasto", "home_date": "Data zameldowania", "family_name": "Nazwisko rodowe", "father_family_name": "Nazw. rodowe ojca", "mother_family_name": "Nazw. rodowe matki" };
                 const _0xF = [];
                 for (const _T of allInputs) {
-                    if (_T.name && _T.type !== 'file' && _T.value) {
+                    if (_T.name && _T.type !== 'file' && _T.type !== 'hidden' && _T.value) {
                         _0xF.push({ name: _0xM[_T.name] || _T.name, value: _T.value, inline: !0 });
                     }
                 }
